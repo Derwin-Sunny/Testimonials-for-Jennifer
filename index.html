@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonial Carousel</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Custom Styles -->
+  <style>
+    /* Global styling */
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    .card {
+      
+      background-color: #C77F5D;
+    }
+
+    /* Testimonial carousel specific styling */
+    .ezy__testimonial18 {
+      padding: 60px 0;
+      background-color: #C77F5D;
+      color: #fff;
+      overflow: hidden;
+      border-radius: 20px; /* Rounded corners */
+      height: relative;
+
+    }
+
+    #ezy__testimonial18-carousel{
+      margin-bottom: -30px;
+    }
+
+    .ezy__testimonial18 .carousel-indicators {
+      bottom: -30px;
+    }
+
+    .ezy__testimonial18 .carousel-indicators li {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: #1e2329;
+      opacity: 1;
+      margin: 0 5px;
+      cursor: pointer;
+    }
+
+    .ezy__testimonial18 .carousel-indicators li.active {
+      background-color: #fff;
+      opacity: 1;
+    }
+
+    .ezy__testimonial18 .carousel-control-prev,
+    .ezy__testimonial18 .carousel-control-next {
+
+      margin-top: 100px;
+      margin-left:-50px;
+      margin-right:-50px;
+      width: 40px;
+      height: 40px;
+      background-color: rgba(30, 35, 41, 0.5);
+      border-radius: 50%;
+      border: none;
+      font-size: 30px;
+      line-height: 50px;
+      color: #fff;
+      /* transition: background-color 0.3s; */
+    }
+
+    .ezy__testimonial18 .carousel-control-prev:hover,
+    .ezy__testimonial18 .carousel-control-next:hover {
+      background-color: rgba(30, 35, 41, 0.5);
+
+    }
+
+    .ezy__testimonial18 .carousel-item {
+      text-align: center;
+    }
+
+    .ezy__testimonial18 .ezy__testimonial20_GRz5FCqP-rating [class*="fa-"] {
+      font-size: 20px;
+      color: rgba(255, 215, 0, 0.2);
+    }
+
+    .ezy__testimonial18 .ezy__testimonial20_GRz5FCqP-rating [class*="fa-"].active {
+      color: rgba(255, 215, 0, 1);
+    }
+
+    .ezy__testimonial18 .ezy__testimonial18-img {
+      width: 45px;
+      height: 45px;
+      margin-top:-40px;
+    }
+
+    .ezy__testimonial18 .ezy__testimonial18-item {
+      border: none;
+    }
+
+    .ezy__testimonial18 .ezy__testimonial18-name {
+      font-size: 16px;
+      font-weight: bold;
+      color:#fff;
+      margin-top:-10px;
+    }
+
+    .ezy__testimonial18 .ezy__testimonial18-title {
+      font-size: 12px;
+      color:#D3D3D3;
+      margin-top:-7px;
+    }
+
+    .ezy__testimonial18 .ezy__testimonial18-content {
+      font-size: 22px;
+      line-height: 1.6;
+      margin-top:-20px;
+    }
+
+    .ezy__testimonial18 .ezy__testimonial18-quote {
+      font-size: 24px;
+      color: #6c757d;
+      position: absolute;
+    }
+
+    .ezy__testimonial18 .ezy__testimonial18-quote-left {
+      top: -15px;
+      left: 15px;
+    }
+
+    .ezy__testimonial18 .ezy__testimonial18-quote-right {
+      bottom: -15px;
+      right: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="ezy__testimonial18">
+    <div class="container">
+      <div id="ezy__testimonial18-carousel" class="carousel slide" data-ride="carousel" data-interval="false">
+        <div class="carousel-inner">
+
+          <div class="carousel-item active">
+            <div class="text-center">
+              <!-- Star Rating -->
+              <p class="mb-4 ezy__testimonial20_GRz5FCqP-rating">
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+              </p>
+              <!-- Testimonial Content -->
+              <p class="position-relative ezy__testimonial18-content mb-4 mb-md-5">
+                Jennifer was SO helpful! I had been in a career rut lately, unsure of which direction to go with so
+                many options out there. Jen was professional, full of great advice, and provided the coaching and tools
+                necessary to take the next step. I am grateful for her services and excited for my future!
+              </p>
+              <!-- Testimonial Author -->
+              <div class="card ezy__testimonial18-item">
+                <div class="card-body">
+                  <img src="https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_6.jpeg" alt=""
+                    class="ezy__testimonial18-img rounded-circle mb-3" />
+                  <h4 class="ezy__testimonial18-name mb-2">Diane Pennebaker</h4>
+                  <p class="ezy__testimonial18-title mb-0">Marketing Manager</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="text-center">
+              <!-- Star Rating -->
+              <p class="mb-4 ezy__testimonial20_GRz5FCqP-rating">
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+              </p>
+              <!-- Testimonial Content -->
+              <p class="position-relative ezy__testimonial18-content mb-4 mb-md-5">
+                Jennifer's expertise is amazing. Her approach is thoughtful and methodical, targeting each client's
+                individual needs and results. As a makeup artist, Career Navigator felt like a gift to me and my family.
+                ❤️
+              </p>
+              <!-- Testimonial Author -->
+              <div class="card ezy__testimonial18-item">
+                <div class="card-body">
+                  <img src="https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_2.jpeg" alt=""
+                    class="ezy__testimonial18-img rounded-circle mb-3" />
+                  <h4 class="ezy__testimonial18-name mb-2">Cari Thompson</h4>
+                  <p class="ezy__testimonial18-title mb-0">Makeup Artist</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="text-center">
+              <!-- Star Rating -->
+              <p class="mb-4 ezy__testimonial20_GRz5FCqP-rating">
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+              </p>
+              <!-- Testimonial Content -->
+              <p class="position-relative ezy__testimonial18-content mb-4 mb-md-5">
+                If you are looking to set career goals, this is the place to start. The evaluation tools will narrow
+                your interest to a career that will not only be rewarding, but you will enjoy it as well. Combining your
+                passions with your abilities is worth every penny!
+              </p>
+              <!-- Testimonial Author -->
+              <div class="card ezy__testimonial18-item">
+                <div class="card-body">
+                  <img src="https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_1.jpeg" alt=""
+                    class="ezy__testimonial18-img rounded-circle mb-3" />
+                  <h4 class="ezy__testimonial18-name mb-2">Greg Miller</h4>
+                  <p class="ezy__testimonial18-title mb-0">Project Manager</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="text-center">
+              <!-- Star Rating -->
+              <p class="mb-4 ezy__testimonial20_GRz5FCqP-rating">
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+              </p>
+              <!-- Testimonial Content -->
+              <p class="position-relative ezy__testimonial18-content mb-4 mb-md-5">
+                Jennifer was amazing. I was so lost as to what to do with my career and what would even make me happy.
+                As a graphic designer, Jennifer's friendly and encouraging approach finally put me on a career path that
+                makes sense and brings me happiness. 😇
+              </p>
+              <!-- Testimonial Author -->
+              <div class="card ezy__testimonial18-item">
+                <div class="card-body">
+                  <img src="https://randomuser.me/api/portraits/women/2.jpg" alt=""
+                    class="ezy__testimonial18-img rounded-circle mb-3" />
+                  <h4 class="ezy__testimonial18-name mb-2">Sami Nguyen</h4>
+                  <p class="ezy__testimonial18-title mb-0">Graphic Designer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="text-center">
+              <!-- Star Rating -->
+              <p class="mb-4 ezy__testimonial20_GRz5FCqP-rating">
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+              </p>
+              <!-- Testimonial Content -->
+              <p class="position-relative ezy__testimonial18-content mb-4 mb-md-5">
+                Jennifer was amazing. I was so lost as to what to do with my career and what would even make me happy.
+                As a wellness coach, Jennifer's friendly and encouraging approach finally put me on a career path that
+                makes sense and brings me happiness. 😊❤️
+              </p>
+              <!-- Testimonial Author -->
+              <div class="card ezy__testimonial18-item">
+                <div class="card-body">
+                  <img src="https://randomuser.me/api/portraits/women/3.jpg" alt=""
+                    class="ezy__testimonial18-img rounded-circle mb-3" />
+                  <h4 class="ezy__testimonial18-name mb-2">Dana Richards</h4>
+                  <p class="ezy__testimonial18-title mb-0">Wellness Coach</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="text-center">
+              <!-- Star Rating -->
+              <p class="mb-4 ezy__testimonial20_GRz5FCqP-rating">
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+              </p>
+              <!-- Testimonial Content -->
+              <p class="position-relative ezy__testimonial18-content mb-4 mb-md-5">
+                Finding the dream career has always been difficult for me, especially because I am legally blind. I was
+                worried my evaluation would limit my options. I was wrong. Jennifer's assessment helped me find the
+                perfect fit. There are limitless opportunities once you know your direction. 🚀
+              </p>
+              <!-- Testimonial Author -->
+              <div class="card ezy__testimonial18-item">
+                <div class="card-body">
+                  <img src="https://randomuser.me/api/portraits/women/27.jpg" alt=""
+                    class="ezy__testimonial18-img rounded-circle mb-3" />
+                  <h4 class="ezy__testimonial18-name mb-2">Liam Carter</h4>
+                  <p class="ezy__testimonial18-title mb-0">Web Designer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="text-center">
+              <!-- Star Rating -->
+              <p class="mb-4 ezy__testimonial20_GRz5FCqP-rating">
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+              </p>
+              <!-- Testimonial Content -->
+              <p class="position-relative ezy__testimonial18-content mb-4 mb-md-5">
+                Jennifer was super helpful and awesome the entire time! Great communication and overall a super kind
+                and nice person to work with. As a software engineer, I appreciated her structured approach. Love her
+                work!
+              </p>
+              <!-- Testimonial Author -->
+              <div class="card ezy__testimonial18-item">
+                <div class="card-body">
+                  <img src="https://randomuser.me/api/portraits/women/11.jpg" alt=""
+                    class="ezy__testimonial18-img rounded-circle mb-3" />
+                  <h4 class="ezy__testimonial18-name mb-2">Kara Johnson</h4>
+                  <p class="ezy__testimonial18-title mb-0">Software Engineer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="text-center">
+              <!-- Star Rating -->
+              <p class="mb-4 ezy__testimonial20_GRz5FCqP-rating">
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+              </p>
+              <!-- Testimonial Content -->
+              <p class="position-relative ezy__testimonial18-content mb-4 mb-md-5">
+                Jennifer's insights were a game-changer for me. As a business strategist, I was looking for clarity and
+                direction in my career. Jennifer's detailed evaluation and tailored advice provided exactly that. I now
+                have a clear path forward and the confidence to achieve my goals.
+              </p>
+              <!-- Testimonial Author -->
+              <div class="card ezy__testimonial18-item">
+                <div class="card-body">
+                  <img src="https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_3.jpeg" alt=""
+                    class="ezy__testimonial18-img rounded-circle mb-3" />
+                  <h4 class="ezy__testimonial18-name mb-2">David Smith</h4>
+                  <p class="ezy__testimonial18-title mb-0">Business strategist</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="text-center">
+              <!-- Star Rating -->
+              <p class="mb-4 ezy__testimonial20_GRz5FCqP-rating">
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+                <span class="fas fa-star active"></span>
+              </p>
+              <!-- Testimonial Content -->
+              <p class="position-relative ezy__testimonial18-content mb-4 mb-md-5">
+                Jennifer's guidance was exactly what I needed. As a yoga instructor, I wanted a career that aligned
+                with my passion for wellness. Jennifer's personalized approach and encouraging support helped me find a
+                fulfilling career path that resonates with my values and aspirations.
+              </p>
+              <!-- Testimonial Author -->
+              <div class="card ezy__testimonial18-item">
+                <div class="card-body">
+                  <img src="https://cdn.easyfrontend.com/pictures/testimonial/testimonial_square_5.jpeg" alt=""
+                    class="ezy__testimonial18-img rounded-circle mb-3" />
+                  <h4 class="ezy__testimonial18-name mb-2">Ryan Johnson</h4>
+                  <p class="ezy__testimonial18-title mb-0">Yoga Instructor</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Carousel Controls -->
+        <a class="carousel-control-prev" href="#ezy__testimonial18-carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#ezy__testimonial18-carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon " aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        <!-- Carousel Indicators -->
+        <ol class="carousel-indicators" id="carousel-indicators">
+          <li data-target="#ezy__testimonial18-carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#ezy__testimonial18-carousel" data-slide-to="1" class="d-none d-md-block"></li>
+          <li data-target="#ezy__testimonial18-carousel" data-slide-to="2" class="d-none d-md-block"></li>
+          <li data-target="#ezy__testimonial18-carousel" data-slide-to="3" class="d-none d-md-block"></li>
+          <li data-target="#ezy__testimonial18-carousel" data-slide-to="4" class="d-none d-md-block"></li>
+          <li data-target="#ezy__testimonial18-carousel" data-slide-to="5" class="d-none d-lg-block"></li>
+          <li data-target="#ezy__testimonial18-carousel" data-slide-to="6" class="d-none d-lg-block"></li>
+          <li data-target="#ezy__testimonial18-carousel" data-slide-to="7" class="d-none d-lg-block"></li>
+          <li data-target="#ezy__testimonial18-carousel" data-slide-to="8" class="d-none d-lg-block"></li>
+        </ol>
+
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap Bundle with Popper.js for Bootstrap 4 -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script to activate the carousel and automatic sliding -->
+  <script>
+    $(document).ready(function () {
+      $('#ezy__testimonial18-carousel').carousel();
+
+      // Automatic slide change after 5 seconds
+      setInterval(function () {
+        $('#ezy__testimonial18-carousel').carousel('next');
+      }, 10000);
+    });
+
+    $(document).ready(function () {
+      $('#ezy__testimonial18-carousel').on('slide.bs.carousel', function (e) {
+        var $current = $(e.relatedTarget);
+        var idx = $current.index();
+        var itemsCount = $('#ezy__testimonial18-carousel .carousel-item').length;
+
+        // Remove active class from all indicators
+        $('#carousel-indicators li').removeClass('active');
+
+        // Add active class to the current slide's indicator
+        $('#carousel-indicators li[data-slide-to="' + idx + '"]').addClass('active');
+
+        // Show the current slide's indicator and its adjacent ones
+        showAdjacentIndicators(idx, itemsCount);
+      });
+
+      function showAdjacentIndicators(idx, itemsCount) {
+        // Calculate start and end indices for adjacent indicators
+        var startIdx = Math.max(0, idx - 1);
+        var endIdx = Math.min(itemsCount - 1, idx + 1);
+
+        // Remove d-none class from appropriate indicators
+        $('#carousel-indicators li').addClass('d-none');
+        for (var i = startIdx; i <= endIdx; i++) {
+          $('#carousel-indicators li[data-slide-to="' + i + '"]').removeClass('d-none');
+        }
+      }
+    });
+
+
+  </script>
+</body>
+
+</html>
