@@ -1,1 +1,11 @@
 node_modules/
+
+# Replit
+.replit
+replit.nix
+.config/
+.next/
+.upm/
+node_modules/
+cache/
+.breakpoints
