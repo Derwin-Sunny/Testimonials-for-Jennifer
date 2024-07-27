@@ -413,13 +413,11 @@
     $(document).ready(function () {
       $('#ezy__testimonial18-carousel').carousel();
 
-      // Automatic slide change after 5 seconds
+      // Automatic slide change after 10 seconds
       setInterval(function () {
         $('#ezy__testimonial18-carousel').carousel('next');
       }, 10000);
-    });
 
-    $(document).ready(function () {
       $('#ezy__testimonial18-carousel').on('slide.bs.carousel', function (e) {
         var $current = $(e.relatedTarget);
         var idx = $current.index();
@@ -437,18 +435,18 @@
 
       function showAdjacentIndicators(idx, itemsCount) {
         // Calculate start and end indices for adjacent indicators
-        var startIdx = Math.max(0, idx - 1);
-        var endIdx = Math.min(itemsCount - 1, idx + 1);
+        var prevIdx = (idx - 1 + itemsCount) % itemsCount;
+        var nextIdx = (idx + 1) % itemsCount;
 
-        // Remove d-none class from appropriate indicators
+        // Remove d-none class from all indicators
         $('#carousel-indicators li').addClass('d-none');
-        for (var i = startIdx; i <= endIdx; i++) {
-          $('#carousel-indicators li[data-slide-to="' + i + '"]').removeClass('d-none');
-        }
+
+        // Show current, previous, and next indicators
+        $('#carousel-indicators li[data-slide-to="' + prevIdx + '"]').removeClass('d-none');
+        $('#carousel-indicators li[data-slide-to="' + idx + '"]').removeClass('d-none');
+        $('#carousel-indicators li[data-slide-to="' + nextIdx + '"]').removeClass('d-none');
       }
     });
-
-
   </script>
 </body>
 
