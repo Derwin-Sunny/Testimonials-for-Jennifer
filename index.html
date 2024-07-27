@@ -15,7 +15,6 @@
     body {
       font-family: 'Inter', sans-serif;
       background-color: #f6eee9;
-      /* Added background color */
     }
 
     .card {
@@ -29,8 +28,6 @@
       color: #fff;
       overflow: hidden;
       border-radius: 20px;
-      /* Rounded corners */
-      height: relative;
     }
 
     #ezy__testimonial18-carousel {
@@ -58,7 +55,6 @@
 
     .ezy__testimonial18 .carousel-control-prev,
     .ezy__testimonial18 .carousel-control-next {
-
       margin-top: 100px;
       margin-left: -50px;
       margin-right: -50px;
@@ -70,13 +66,11 @@
       font-size: 30px;
       line-height: 50px;
       color: #fff;
-      /* transition: background-color 0.3s; */
     }
 
     .ezy__testimonial18 .carousel-control-prev:hover,
     .ezy__testimonial18 .carousel-control-next:hover {
       background-color: rgba(30, 35, 41, 0.5);
-
     }
 
     .ezy__testimonial18 .carousel-item {
@@ -135,6 +129,16 @@
     .ezy__testimonial18 .ezy__testimonial18-quote-right {
       bottom: -15px;
       right: 15px;
+    }
+
+    /* Ensure consistent indicator visibility */
+    .d-none {
+      display: none !important;
+    }
+
+    .carousel-indicators li {
+      display: inline-block;
+      /* Ensure indicators are inline */
     }
   </style>
 </head>
@@ -365,7 +369,13 @@
               </p>
               <!-- Testimonial Content -->
               <p class="position-relative ezy__testimonial18-content mb-4 mb-md-5">
-                Jennifer was such a joy to work with. She is extremely knowledgeable and resourceful. As someone transitioning between careers, she was attuned to my worries and comforted me that I can find something related to my skill set. She was especially helpful in showing me resources of the types of jobs I might want to work and the requirements necessary to attain employment. I cannot stress enough how much she went out of her way to be accessible and responsive to various concerns and requests. She also gave me great tools and ideas for improving my resume to leverage my strengths. I highly recommend her to anyone needing career-related services.
+                Jennifer was such a joy to work with. She is extremely knowledgeable and resourceful. As someone
+                transitioning between careers, she was attuned to my worries and comforted me that I can find something
+                related to my skill set. She was especially helpful in showing me resources of the types of jobs I might
+                want to work and the requirements necessary to attain employment. I cannot stress enough how much she
+                went out of her way to be accessible and responsive to various concerns and requests. She also gave me
+                great tools and ideas for improving my resume to leverage my strengths. I highly recommend her to anyone
+                needing career-related services.
               </p>
               <!-- Testimonial Author -->
               <div class="card ezy__testimonial18-item">
@@ -394,7 +404,8 @@
             <li data-target="#ezy__testimonial18-carousel" data-slide-to="5" class="d-none d-lg-block"></li>
             <li data-target="#ezy__testimonial18-carousel" data-slide-to="6" class="d-none d-lg-block"></li>
             <li data-target="#ezy__testimonial18-carousel" data-slide-to="7" class="d-none d-lg-block"></li>
-            <li data-target="#ezy__testimonial18-carousel" data-slide-to="8" class="d-none d-lg-block"></li> <!-- New indicator -->
+            <li data-target="#ezy__testimonial18-carousel" data-slide-to="8" class="d-none d-lg-block"></li>
+            <!-- New indicator -->
           </ol>
 
 
@@ -430,18 +441,18 @@
         $('#carousel-indicators li[data-slide-to="' + idx + '"]').addClass('active');
 
         // Show the current slide's indicator and its adjacent ones
-        showAdjacentIndicators(idx, itemsCount);
+        showThreeIndicators(idx, itemsCount);
       });
 
-      function showAdjacentIndicators(idx, itemsCount) {
-        // Calculate start and end indices for adjacent indicators
+      function showThreeIndicators(idx, itemsCount) {
+        // Calculate indices for adjacent indicators
         var prevIdx = (idx - 1 + itemsCount) % itemsCount;
         var nextIdx = (idx + 1) % itemsCount;
 
-        // Remove d-none class from all indicators
+        // Hide all indicators initially
         $('#carousel-indicators li').addClass('d-none');
 
-        // Show current, previous, and next indicators
+        // Show only the current, previous, and next indicators
         $('#carousel-indicators li[data-slide-to="' + prevIdx + '"]').removeClass('d-none');
         $('#carousel-indicators li[data-slide-to="' + idx + '"]').removeClass('d-none');
         $('#carousel-indicators li[data-slide-to="' + nextIdx + '"]').removeClass('d-none');
